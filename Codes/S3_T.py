@@ -11,6 +11,7 @@
 # -------------------------------------------------------------
 
 import os
+import add_matrix as a
 # Preparing the environment
 def clearConsole():
     command = 'clear'
@@ -41,6 +42,13 @@ class Matrix_5x5:
         return (rows * columns)
 
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (A) HERE
+    def addmatrix(self,matrix_b): # add matrix_b into matrix_a and save it in matrix_a .
+        if len(self.matrix) == len(matrix_b.matrix):
+            for i in range(len(self.matrix)):
+                for j in range(len(self.matrix[0])):
+                    self.matrix[i][j] = self.matrix[i][j] + matrix_b.matrix[i][j]
+        return matrix_a
+
 
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (B) HERE
 
@@ -58,18 +66,18 @@ matrix_b = Matrix_5x5([[20,12,22,20,18],
                        [18,23,21,20,19],
                        [12,13,14,15,16]])
 print(">> Matrix A:")
-matrix_a.print_matrix();
+matrix_a.print_matrix()
 print(">> Matrix B:")
-matrix_b.print_matrix();
+matrix_b.print_matrix()
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (A) HERE
-
+matrix_a.addmatrix(matrix_b) # calling addmatrix()
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (B) HERE
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (C) HERE
 
 #Printing matrices for seeing any changes
 print(">> Matrix A (after):")
-matrix_a.print_matrix();
+matrix_a.print_matrix()
 print(">> Matrix B (after):")
-matrix_b.print_matrix();
+matrix_b.print_matrix()
