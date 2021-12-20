@@ -51,7 +51,12 @@ class Matrix_5x5:
 
 
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (B) HERE
-
+    def substract(self,matrix_b):
+            if self.length_matrix()==matrix_b.length_matrix():
+                for i in range(len(self.matrix)):
+                    for j in range(len(self.matrix)):
+                        self.matrix[i][j] = self.matrix[i][j] - matrix_b.matrix[i][j]
+    
     #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> ADD FUNCTION (C) HERE
 
 #Main code continues here:
@@ -73,7 +78,7 @@ matrix_b.print_matrix()
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (A) HERE
 matrix_a.addmatrix(matrix_b) # calling addmatrix()
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (B) HERE
-
+matrix_a.substract(matrix_b)
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> USE Matrix_5x5 Class, FUNCTION (C) HERE
 
 #Printing matrices for seeing any changes
