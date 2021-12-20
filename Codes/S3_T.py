@@ -1,7 +1,11 @@
 # -------------------------------------------------------------
 # 
 # Project:      Machine Vision Workshop (Fundamentals, Functions and Classes)
-# Instructor:   ENG. Michael B.Khani      
+# Developers:   ENG. Michael B.Khani   
+#               Beyza Nur
+#               Umut Furkan Dugan
+#               Zeynep Altunel
+#               Omer Berkay Kaynar
 # Session id:   SIII-T
 #
 # -------------------------------------------------------------
